@@ -1,0 +1,24 @@
+// 6. Write a Java program to print the sum (addition), multiply, subtract, divide and remainder of two numbers.
+// Test Data:
+// Input first number: 125
+// Input second number: 24
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input first number: ");
+        int firstNum = input.nextInt();
+        input.nextLine();
+        System.out.println("Input second number: ");
+        int secondNum = input.nextInt();
+        System.out.println("Sum of numbers = " + (firstNum + secondNum));
+        System.out.println("Product of numbers = " + (firstNum * secondNum));
+        System.out.println("Difference of numbers = " + (firstNum - secondNum));
+        System.out.println("Quotient of numbers = " + (firstNum / secondNum));
+        System.out.println("Remainder of division = " + (firstNum % secondNum));
+
+    }
+}
