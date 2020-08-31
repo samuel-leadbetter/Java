@@ -1,2 +1,2 @@
 # Java
-a collection of java exercises
+a collection of completed java exercises with descriptions and solutions
