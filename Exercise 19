@@ -1,0 +1,16 @@
+// 19. Write a Java program to convert a decimal number to binary number.
+// Input Data:
+// Input a Decimal Number : 5
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input a decimal number to convert to binary: ");
+        int num = input.nextInt();
+        System.out.println(num + " in binary is : " + Integer.toBinaryString(num));
+
+    }
+}
