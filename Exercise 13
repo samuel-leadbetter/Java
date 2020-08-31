@@ -1,0 +1,21 @@
+// 13. Write a Java program to print the area and perimeter of a rectangle.
+// Test Data:
+// Width = 5.5 Height = 8.5
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input rectangle width: ");
+        double width = input.nextDouble();
+        input.nextLine();
+        System.out.println("Input rectangle height: ");
+        double height = input.nextDouble();
+        input.nextLine();
+        System.out.println("Rectangle area = " + (width * height));
+        System.out.println("Rectangle perimeter = " + 2 * (width + height));
+
+    }
+}
