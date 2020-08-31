@@ -1,0 +1,22 @@
+// 18. Write a Java program to multiply two binary numbers.
+// Input Data:
+// Input the first binary number: 10
+// Input the second binary number: 11
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String binary1, binary2;
+        System.out.println("Enter 1st binary number: ");
+        binary1 = input.next();
+        System.out.println("Enter 2nd binary number: ");
+        binary2 = input.next();
+        int num1 = Integer.parseInt(binary1,2);
+        int num2 = Integer.parseInt(binary2,2);
+        int sum = num1 * num2;
+        System.out.println(binary1 + " + " + binary2 + " = " + Integer.toBinaryString(sum));
+    }
+}
