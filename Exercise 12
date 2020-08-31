@@ -1,0 +1,18 @@
+// 12. Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input first number: ");
+        int num1 = input.nextInt();
+        System.out.println("Input second number: ");
+        int num2 = input.nextInt();
+        System.out.println("Input third number: ");
+        int num3 = input.nextInt();
+        System.out.println("Average of numbers = " + (num1 + num2 + num3) / 3);
+    }
+}
+
