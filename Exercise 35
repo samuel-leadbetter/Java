@@ -1,0 +1,16 @@
+// 35. Write a Java program to compute the area of a polygon.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input number of sides of polygon: ");
+        int sideAmount = input.nextInt();
+        System.out.println("Input length of side: ");
+        int sideLength = input.nextInt();
+        double polygonArea = (sideAmount * sideLength * sideLength)/(4 * Math.tan(Math.PI/sideAmount));
+        System.out.println("Area of polygon = " + polygonArea);
+    }
+}
