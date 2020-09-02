@@ -1,0 +1,15 @@
+// 27. Write a Java program to convert an octal number to a hexadecimal number.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input an octal number to convert to hexadecimal: ");
+        String octalNum = input.next();
+        int toDecimal = Integer.parseInt(octalNum, 8);
+        String toHex = Integer.toHexString(toDecimal);
+        System.out.println(octalNum + " in hexadecimal is : " + toHex);
+    }
+}
