@@ -1,0 +1,15 @@
+// 29. Write a Java program to convert a hexadecimal to a binary number.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input a hexadecimal number to convert to binary: ");
+        String hexNum = input.next();
+        int decNum = Integer.parseInt(hexNum,16);
+        String binNum = Integer.toBinaryString(decNum);
+        System.out.println(hexNum + " to binary is: " + binNum);
+    }
+}
