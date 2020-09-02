@@ -1,0 +1,16 @@
+// 37. Write a Java program to reverse a string
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter string to be reversed: ");
+        char[] stringToReverse = input.nextLine().toCharArray();
+        System.out.println("Reversed string: ");
+        for(int i = stringToReverse.length - 1; i >= 0; i--) {
+            System.out.print(stringToReverse[i]);
+        }
+    }
+}
