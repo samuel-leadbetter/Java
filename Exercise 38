@@ -1,0 +1,32 @@
+// 38. Write a Java program to count the letters, spaces, numbers and other characters of an input string.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter string: ");
+        char[] stringToCheck = input.nextLine().toCharArray();
+        int numLetters = 0;
+        int numSpaces = 0;
+        int numNumbers = 0;
+        int numOthers = 0;
+        for(int i = 0; i < stringToCheck.length; i++) {
+            if(Character.isLetter(stringToCheck[i])) {
+                numLetters ++;
+            } else if (Character.isDigit(stringToCheck[i])) {
+                numNumbers ++;
+            } else if (Character.isSpaceChar(stringToCheck[i])) {
+                numSpaces ++;
+            } else {
+                numOthers ++;
+            }
+        }
+        System.out.println("String contains: ");
+        System.out.println(numLetters + " letters");
+        System.out.println(numNumbers + " numbers");
+        System.out.println(numSpaces + " spaces");
+        System.out.println(numOthers + " other characters");
+    }
+}
