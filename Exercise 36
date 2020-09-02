@@ -1,0 +1,28 @@
+// 36. Write a Java program to compute the distance between two points on the surface of earth
+
+import java.util.Scanner;
+
+public class Main {
+    static final double earthRadius = 6371.01;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input the latitude of 1st coordinate: ");
+        double x1 = input.nextDouble();
+        System.out.println("Input the longtitude of 1st coordinate: ");
+        double y1 = input.nextDouble();
+        System.out.println("Input the latitude of 2nd coordinate: ");
+        double x2 = input.nextDouble();
+        System.out.println("Input the longtitude of 2nd coordinate: ");
+        double y2 = input.nextDouble();
+        System.out.println("The distance between these two points is: " +calculateDistance(x1,x2,y1,y2) + "km");
+    }
+
+    public static double calculateDistance(double x1, double x2, double y1, double y2) {
+        double latx1 = Math.toRadians(x1);
+        double latx2 = Math.toRadians(x2);
+        double laty1 = Math.toRadians(y1);
+        double laty2 = Math.toRadians(y2);
+        return earthRadius * Math.acos((Math.sin(latx1) * Math.sin(latx2)) + (Math.cos(latx1) *
+                                Math.cos(latx2) * Math.cos(laty1 - laty2)));
+    }
+}
