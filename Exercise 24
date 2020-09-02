@@ -1,0 +1,14 @@
+// 24. Write a Java program to convert a binary number to a Octal number.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input a binary number to convert to octal: ");
+        String binaryNum = input.next();
+        int toDecimal = Integer.parseInt(binaryNum, 2);
+        System.out.println(binaryNum + " in octal is : " + Integer.toOctalString(toDecimal));
+    }
+}
