@@ -1,0 +1,19 @@
+// 33. Write a Java program and compute the sum of the digits of an integer.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input a number: ");
+        int num1 = input.nextInt();
+        int sum = 0;
+        while(num1 != 0) {
+            sum += num1 % 10;
+            num1 /= 10;
+        }
+        System.out.println(sum);
+    }
+}
+
