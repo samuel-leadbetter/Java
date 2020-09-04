@@ -1,0 +1,20 @@
+// 46. Write a Java program to display the system time.
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.format("\nCurrent Date and time: %tc%n\n", System.currentTimeMillis());
+    }
+}
+
+// alternative solution
+
+import java.util.Date;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Date currentDate = new Date();
+        System.out.println("Current datetime is: " + currentDate);
+    }
+}
