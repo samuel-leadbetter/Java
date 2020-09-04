@@ -1,0 +1,13 @@
+// 44. Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input an integer: ");
+        int n = input.nextInt();
+        System.out.println(n + "+" + n*11 + "+" + n*111 + " = " +(n + n*11 + n*111));
+    }
+}
