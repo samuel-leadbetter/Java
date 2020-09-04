@@ -1,0 +1,13 @@
+// 42. Write a Java program to input and display your password.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter password: ");
+        String password = input.next();
+        System.out.println("Password is : " +password);
+    }
+}
