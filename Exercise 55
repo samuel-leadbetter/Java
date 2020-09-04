@@ -1,0 +1,16 @@
+// 55. Write a Java program to convert seconds to hour, minute and seconds.
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input number of seconds: ");
+        int totalSeconds = input.nextInt();
+        int numSecs = totalSeconds % 60;
+        int numHours = totalSeconds / 3600;
+        int numMins = (totalSeconds / 60) % 60;
+        System.out.printf("%02d:%02d:%02d", numHours, numMins, numSecs);
+    }
+}
